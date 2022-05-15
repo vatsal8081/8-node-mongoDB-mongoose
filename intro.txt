@@ -1,0 +1,11 @@
+1) a mongoose is package which is wrapper for the mongoDB just like we have express as wrapper for node.js
+
+2) a mongoose is used to easily work with mongoDB for connecting, CRUD, query, validate, schims creating, modeling etc for mongoDB.
+
+3) as we don't noode the express for creating web apps but it has many usefull things which helps us to do rapid development just like that we don't need mongoose we can directly intrect and work with mongoDB but mongoose has many usefull things which helps us to rapid development with database related things.
+
+4) mongoose use mongoDB node.js diriver internally for intracting with mongoDB.
+
+5) now in this practic we will use mongoose version 5 there is mongoose 6 out which is lattest version of mongoose but we will use 5 to easily follow cource then after when we complete we will learn mongoose doc and go through migrating from 5 to 6 guide there to learn breacking chnages in mongoose 6.
+
+7) now lets install mongoose 5 and then check servev.js
