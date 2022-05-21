@@ -1,3 +1,6 @@
 1) intro.txt
 2) server.js (1,2,3)
 3) server.js (4,5)
+4) mvc.txt
+5) models/tourModel.js
+6) follow tour create route from app.js tour middlewere to route to controller
