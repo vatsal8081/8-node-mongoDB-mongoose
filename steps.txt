@@ -4,3 +4,5 @@
 4) mvc.txt
 5) models/tourModel.js
 6) follow tour create route from app.js tour middlewere to route to controller
+7) follow tour get all and find tour by id, then update tour, delete tour
+8) in lacture 12 it's modeling the tours object and creating new fields but i am not adding practice for it because we will add practice of fields and options in depth for creating model in future when we learn mongoose from doc. just keep in mind when we change the model in mongoose then mongoDB will automactily add newely added default fields and other fields in all old data which is there in our collection. 

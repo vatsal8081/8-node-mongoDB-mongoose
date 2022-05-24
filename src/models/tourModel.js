@@ -5,7 +5,6 @@ import mongoose from 'mongoose';
 
 //  so we will comment out the tour schema and model created in server js for reference and we will pant it hear.
 
-console.log('in hear.....');
 const TourSchema = new mongoose.Schema({
   name: { type: String, required: true, unique: true },
   rating: { type: Number, default: 0 },

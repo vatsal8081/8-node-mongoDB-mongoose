@@ -26,4 +26,75 @@ const createTour = async (req, res) => {
   //   the rating and the price is number still if you pass string then mongoose will convert it for you in number and then store.
 };
 
-export { createTour };
+const getAllTours = async (req, res) => {
+  try {
+    const allTours = await Tour.find();
+    res.json({
+      status: 'success',
+      results: allTours.length,
+      data: allTours,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: 'fali',
+      message: err,
+    });
+  }
+};
+
+const getTourById = async (req, res) => {
+  try {
+    const tour = await Tour.findById(req.params.id);
+    res.json({
+      status: 'success',
+      data: tour,
+    });
+  } catch (err) {
+    res.json({
+      status: 'fail',
+      message: err,
+    });
+  }
+};
+
+const updateTourIdByPatch = async (req, res) => {
+  try {
+    // this findByIdAndUpdate function requires id of document, values to update, and it also accept optional arguments and new is one of them when it's true the method return newley updated document which we can return to clients.
+    const updatedTour = await Tour.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+
+    res.json({
+      status: 'success',
+      data: updatedTour,
+    });
+  } catch (err) {
+    res.status(400).json({
+      status: 'fail',
+      message: err,
+    });
+  }
+};
+
+const deleteTour = async (req, res) => {
+  try {
+    await Tour.findByIdAndDelete(req.params.id);
+    res.status(204).json({
+      status: 'success',
+      data: null,
+    });
+  } catch (err) {
+    res.josn({
+      status: 'fail',
+      message: err,
+    });
+  }
+};
+
+export {
+  createTour,
+  getAllTours,
+  getTourById,
+  updateTourIdByPatch,
+  deleteTour,
+};
