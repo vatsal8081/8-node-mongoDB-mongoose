@@ -2,7 +2,7 @@
 
 2) a mongoose is used to easily work with mongoDB for connecting, CRUD, query, validate, schims creating, modeling etc for mongoDB.
 
-3) as we don't noode the express for creating web apps but it has many usefull things which helps us to do rapid development just like that we don't need mongoose we can directly intrect and work with mongoDB but mongoose has many usefull things which helps us to rapid development with database related things.
+3) as we don't need the express for creating web apps but it has many usefull things which helps us to do rapid development just like that we don't need mongoose we can directly intrect and work with mongoDB but mongoose has many usefull things which helps us to rapid development with database related things.
 
 4) mongoose use mongoDB node.js diriver internally for intracting with mongoDB.
 

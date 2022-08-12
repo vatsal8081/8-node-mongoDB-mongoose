@@ -15,7 +15,7 @@ dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 // 3
 // we can use the connect method from mongoDB to connect to database and it returns promise so we can use try and catch hear but not now because we will learn error handling in future section.
-// in mongoose 5 we ave to pass some extra config options with mongoDB url to deal with some deprecation warnings but it's just part of configuring mongoose 5 so we should always add it in mongoose 5
+// in mongoose 5 we Have to pass some extra config options with mongoDB url to deal with some deprecation warnings but it's just part of configuring mongoose 5 so we should always add it in mongoose 5
 // remember we are doing this after donenv config because before that we will not have env configs.
 
 // we can use top level await insted of then hear if node version is latest but we are at node 12 so using then
